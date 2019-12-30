@@ -56,7 +56,7 @@ public class TransportPipes extends JavaPlugin {
     @Override
     public void onEnable() {
 
-        if (Bukkit.getVersion().contains("1.13")) {
+/*        if (Bukkit.getVersion().contains("1.13")) {
             LegacyUtils.setInstance(new LegacyUtils_1_13());
         } else {
             System.err.println("------------------------------------------");
@@ -75,7 +75,7 @@ public class TransportPipes extends JavaPlugin {
             Bukkit.getPluginManager().disablePlugin(this);
             return;
         }
-
+*/
         if (Files.isRegularFile(Paths.get(getDataFolder().getPath(), "recipes.yml"))) {
             System.err.println("------------------------------------------");
             System.err.println("Please delete the old plugins/TransportPipes directory so TransportPipes can recreate it with a bunch of new config values");
