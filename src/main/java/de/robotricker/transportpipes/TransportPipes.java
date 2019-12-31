@@ -55,14 +55,13 @@ public class TransportPipes extends JavaPlugin {
 
     @Override
     public void onEnable() {
-
-/*        if (Bukkit.getVersion().contains("1.13")) {
+     if (Bukkit.getVersion().contains("1.13")) {
             LegacyUtils.setInstance(new LegacyUtils_1_13());
         } else {
             System.err.println("------------------------------------------");
-            System.err.println("TransportPipes currently only works with Minecraft 1.13.1 and 1.13.2");
+            System.err.println("TransportPipes currently only works with Minecraft 1.13.1 and 1.13.2 (for now ;D)");
             System.err.println("------------------------------------------");
-            Bukkit.getPluginManager().disablePlugin(this);
+          /*  Bukkit.getPluginManager().disablePlugin(this); */
             return;
         }
 
@@ -70,12 +69,12 @@ public class TransportPipes extends JavaPlugin {
             Class.forName("org.bukkit.inventory.RecipeChoice");
         } catch (ClassNotFoundException e) {
             System.err.println("------------------------------------------");
-            System.err.println("TransportPipes currently only works with Minecraft 1.13.1 and 1.13.2");
+            System.err.println("TransportPipes currently only works with Minecraft 1.13.1 and 1.13.2 (for now ;D)");
             System.err.println("------------------------------------------");
-            Bukkit.getPluginManager().disablePlugin(this);
+          /*  Bukkit.getPluginManager().disablePlugin(this); */
             return;
         }
-*/
+
         if (Files.isRegularFile(Paths.get(getDataFolder().getPath(), "recipes.yml"))) {
             System.err.println("------------------------------------------");
             System.err.println("Please delete the old plugins/TransportPipes directory so TransportPipes can recreate it with a bunch of new config values");
